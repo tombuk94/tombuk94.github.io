@@ -20,7 +20,7 @@ export default function Menu() {
           <a href="#projects">Web Projects</a>
         </li>
         <li className="menu-item" data-aos="fade-right" data-aos-delay="400">
-          <a href="#projects">Landing Pages</a>
+          <a href="#LP">Landing Pages</a>
         </li>
         <li className="menu-item" data-aos="fade-right" data-aos-delay="500">
           <a href="#contact">Contact</a>

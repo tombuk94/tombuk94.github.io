@@ -40,6 +40,7 @@ html , #root{
   text-decoration: none;
   color: white;
   display: block; /* Garantir que o link ocupe toda a área do li */
+  padding:5px;
 }
 #menuToggle {
   display: block;
@@ -165,16 +166,16 @@ html , #root{
 
         /* /////////////////////////////////////PROFILE///////////////////////////////////////// */
 
-#profile h1, #experiences h1, #abilities h1, #projects h1, #contact h1, #ClarizenProjects h1{
+#profile h1, #experiences h1, #abilities h1, #projects h1, #contact h1, #ClarizenProjects h1, #LandingPages h1{
     text-align: center;
     color: #466b6e;
     font-weight: 300;
     font-size:54px;
-    margin-top: 40px;
-    margin-bottom: 30px;
+    margin-top: 30px;
+    margin-bottom: 20px;
     letter-spacing: 10px;
 }
-#profile h2, #experiences p, #abilities p, #projects p, #ClarizenProjects p{
+#profile h2, #experiences p, #abilities p, #projects p, #ClarizenProjects p , #LandingPages p{
     text-align: center;
     color: #000000a3;
     font-weight: 300;
@@ -282,10 +283,10 @@ main{
 
 /* /////////////////////PROJECTS/////////////////// */
 
-#projects{
+#projects , #LandingPages{
     background:#f3efe0;
-    padding-top:40px;
-    padding-bottom:40px;
+    padding-top:10px;
+    padding-bottom:10px;
 }
 .box{
     max-width: 90%;

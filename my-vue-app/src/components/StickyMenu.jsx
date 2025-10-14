@@ -17,6 +17,7 @@ export default function StickyMenu() {
       experiences: document.getElementById('experiences')?.offsetTop || 0,
       abilities: document.getElementById('abilities')?.offsetTop || 0,
       ClarizenProjects: document.getElementById('ClarizenProjects')?.offsetTop || 0,
+      LandingPages: document.getElementById('LandingPages')?.offsetTop || 0,
       projects: document.getElementById('projects')?.offsetTop || 0,
       contact: document.getElementById('contact')?.offsetTop || 0
     };
@@ -36,8 +37,9 @@ export default function StickyMenu() {
 
       // Active section logic
       if (scrollY >= positions.contact - 600) setActiveSection('contact');
+      else if (scrollY >= positions.LandingPages) setActiveSection('LandingPages');
       else if (scrollY >= positions.projects) setActiveSection('projects');
-      else if (scrollY >= positions.ClarizenProjects) setActiveSection('ClarizenProjects');
+      else if (scrollY >= positions.ClarizenProjects) setActiveSection('ClarizenProjects');      
       else if (scrollY >= positions.abilities) setActiveSection('abilities');
       else if (scrollY >= positions.experiences) setActiveSection('experiences');
       else if (scrollY >= positions.profile) setActiveSection('profile');      
@@ -54,7 +56,7 @@ export default function StickyMenu() {
       ref={menuRef}
       style={{
         position: fixed ? 'fixed' : 'absolute',
-        top: fixed ? '20px' : '100%',
+        top: fixed ? '5px' : '100%',
         width: fixed ? '120px' : 'auto',
         color: 'white',
         textAlign: 'center',
@@ -119,7 +121,7 @@ export default function StickyMenu() {
           <a href="#ClarizenProjects" style={{ color: 'white', textDecoration: 'none' }}>
             Clarizen Projects
           </a>
-        </li>
+        </li>         
         <li
           id="e"
           style={{
@@ -131,11 +133,25 @@ export default function StickyMenu() {
           }}
         >
           <a href="#projects" style={{ color: 'white', textDecoration: 'none' }}>
-            Projects
+            Web Projects
           </a>
         </li>
         <li
           id="f"
+          style={{
+            padding: '30px 0',
+            fontSize: 20,
+            fontWeight: 500,
+            backgroundColor: activeSection === 'LandingPages' ? '#466b6e' : '#222222',
+            cursor: 'pointer',
+          }}
+        >
+          <a href="#LandingPages" style={{ color: 'white', textDecoration: 'none' }}>
+            Landing Pages
+          </a>
+        </li>
+        <li
+          id="g"
           style={{
             padding: '30px 0',
             fontSize: 20,
